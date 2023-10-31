@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+div{
+    font-family: Arial, sans-serif;
+}
+
+.notification {
+    background-color: #4CAF50; /* Green background color */
+    color: white; /* White text color */
+    text-align: center;
+    padding: 15px; /* Add padding to the notification */
+    position: fixed; /* Fixed positioning to stay at the top */
+    top: 40%;
+    left: 25%;
+    right: 25%;
+    display: none; /* Initially hidden */
+
+}
+
+.notification.success {
+    background-color: #4CAF50; /* Green background for success */
+}
+
+.notification.error {
+    background-color: #f44336; /* Red background for error */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #0074D9;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+}
+
+img {
+    max-width: 200px;    /* Reduce the maximum width */
+    max-height: 350px;   /* Reduce the maximum height */
+    align-content: center;
+}
+
+
+

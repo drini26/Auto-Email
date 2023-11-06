@@ -4,47 +4,114 @@ body {
 }
 
 h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
     color: #333;
-}
-div{
-    font-family: Arial, sans-serif;
-}
-
-.notification {
-    background-color: #4CAF50; /* Green background color */
-    color: white; /* White text color */
     text-align: center;
-    padding: 15px; /* Add padding to the notification */
-    position: fixed; /* Fixed positioning to stay at the top */
-    top: 40%;
-    left: 25%;
-    right: 25%;
-    display: none; /* Initially hidden */
-
+    margin: 20px 0; /* Add space above and below the title */
+    letter-spacing: 2px; /* Add letter spacing for a modern look */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle text shadow */
+}
+.notification {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    top: 80%;
+    left: 20%;
+    right: 20%;
+    display: none;
+    border: none;
+    border-radius: 7px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
 }
 
 .notification.success {
-    background-color: #4CAF50; /* Green background for success */
+    background-color: #4CAF50;
 }
 
 .notification.error {
-    background-color: #f44336; /* Red background for error */
+    background-color: #f44336;
+}
+#image-container {
+    border: double black;
+    left:25%;
+    right:25%;
+    margin-top: 25px;
+    margin-left: 300px;
+    margin-right: 300px;
+    max-height: 200px;
+    height: auto; /* Allow the height to adjust proportionally */
+    overflow: auto; /* Add a scrollbar if the content overflows */
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 50px;
+
+    top: 20%;
+    left:15%;
+    right:15%;
+    width: 60%;
+    height: 60%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Add styles for the close button and modal image */
+.modal img{
+    max-width: 400px;
+    max-height: 400px;
+    margin-left: 250px;
+    margin-right: 250px;
 }
 
 button {
+    min-width: 200px;
     padding: 10px 20px;
+
     background-color: #0074D9;
     color: #fff;
-    border: none;
     cursor: pointer;
-    align-items: center;
+    border: none;
+    border-radius: 7px;
+    transition: background-color 0.3s;
 }
 
-img {
-    max-width: 200px;    /* Reduce the maximum width */
-    max-height: 350px;   /* Reduce the maximum height */
-    align-content: center;
+button:hover {
+    background-color: #0056B3; /* Darker shade on hover */
+}
+#image-container img{
+    position: static;
+    max-width: 180px;
+    max-height: 180px;
+    margin: 40px 10px 30px;
+}
+form {
+    padding: 40px;
 }
 
+#submit-button {
+    padding: 3px 20px;
+    min-width: 20px;
+}
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+}
+img{
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border-color 0.3s;
+}
 
-
+img.selected {
+    border: 3px solid blue;
+}

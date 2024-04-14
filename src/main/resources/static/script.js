@@ -4,7 +4,7 @@ document.getElementById("send-email-button").addEventListener("click", function 
     resultElement.style.display = "none"; // Hide the notification initially
 
     // Define the API URL
-    const apiUrl = "http://localhost:8080/email/send"; // Replace with the actual API endpoint URL
+    const apiUrl = "http://localhost:8080/email/send"; 
 
     // Make the API call using the Fetch API
     fetch(apiUrl, {

@@ -1,5 +1,6 @@
-package com.example.spring_project;
+package com.example.spring_project.Repository;
 
+import com.example.spring_project.Controller.SpringController;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

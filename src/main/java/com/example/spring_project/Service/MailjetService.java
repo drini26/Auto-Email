@@ -1,5 +1,6 @@
-package com.example.spring_project;
+package com.example.spring_project.Service;
 
+import com.example.spring_project.Controller.SpringController;
 import com.mailjet.client.MailjetClient;
 import com.mailjet.client.MailjetRequest;
 import com.mailjet.client.MailjetResponse;
@@ -21,9 +22,6 @@ import java.util.Base64;
 
 @Service
 public class MailjetService {
-    /**
-     * This call sends a message to the given recipient with inline attachment.
-     */
 
     @Autowired
     private SpringController springController;

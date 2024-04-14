@@ -1,5 +1,7 @@
-package com.example.spring_project;
+package com.example.spring_project.Controller;
 
+import com.example.spring_project.Repository.DatabaseDataInsertion;
+import com.example.spring_project.Service.MailjetService;
 import com.mailjet.client.errors.MailjetException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -23,10 +25,9 @@ public class EmailController {
     public ResponseEntity<String> sendEmail() {
         try {
             mailjetService.sendEmail();
-            databaseDataInsertion.addEmailsToDatabase();// Delegates the email sending to the MailjetService.
+            databaseDataInsertion.addEmailsToDatabase();
             return ResponseEntity.ok("Email sent successfully.");
         } catch (MailjetException e) {
-            // Handle MailjetException
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Mailjet error: " + e.getMessage());
         }
     }

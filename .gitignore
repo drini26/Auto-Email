@@ -32,3 +32,5 @@ out/
 
 ### VS Code ###
 .vscode/
+#app properties
+C:\spring\spring project\src\main\resources\application.properties

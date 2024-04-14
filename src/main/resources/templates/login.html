@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/login.css}" />
+</head>
+<body>
+
+<h1>Login</h1>
+
+<!-- Display error message if authentication fails -->
+<p th:if="${error}" style="color: red" th:text="${error}"></p>
+
+<form th:action="@{/login}" method="post">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required autofocus><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required><br>
+
+    <button type="submit" id="submit-button">Log In</button>
+</form>
+<p>Don't have an account? <a th:href="@{/signup}">Sign up</a></p>
+<p>Continue as <a th:href="@{/}">Guest</a></p>
+</body>
+</html>

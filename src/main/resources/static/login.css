@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin: 20px 0; /* Add space above and below the title */
+    letter-spacing: 2px; /* Add letter spacing for a modern look */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle text shadow */
+}
+button {
+    min-width: 200px;
+    padding: 10px 20px;
+
+    background-color: #0074D9;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 7px;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: #0056B3; /* Darker shade on hover */
+}
+form {
+    padding: 40px;
+}
+#submit-button {
+    margin: 15px;
+    padding: 3px 20px;
+    min-width: 20px;
+}
+input{
+    margin: 5px;
+}
